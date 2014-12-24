@@ -1,6 +1,6 @@
 # Rellyfish
 
-TODO: Write a gem description
+A ruby gem wrapper for cjellyfish: https://github.com/sunlightlabs/jellyfish , for doing approximate and phonetic matching of strings.
 
 ## Installation
 
@@ -20,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'rellyfish'
+
+include Rellyfish
+
+levenshtein_distance('jellyfish', 'smellyfish')
+jaro_distance('jellyfish', 'smellyfish')
+metaphone('Jellyfish')
+
+```
 
 ## Contributing
 
